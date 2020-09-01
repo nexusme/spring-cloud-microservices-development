@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: example-weather-eureka-client-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+
+zuul:
+  routes:
+    hi:
+      path: /hi/**
+      serviceId: example-weather-eureka-client

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: example-weather-eureka-data
+server:
+  port: 8899
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

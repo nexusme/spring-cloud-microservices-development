@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <title>Nexus's Weather Forecast</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h3 th:text="${reportModel.title}">Nexus's Weather Forecast</h3>
+        <select class="custom-select" id="selectCityId">
+            <option th:each="city : ${reportModel.cityList}"
+                    th:value="${city.cityId}" th:text="${city.cityName}"
+                    th:selected="${city.cityId eq reportModel.cityId}">
+            </option>
+        </select>
+    </div>
+
+    <div th:if="${reportModel.report}!=null">
+
+        <div class="row">
+            <h1 class="text-success" th:text="${reportModel.report.city}">City Name</h1>
+        </div>
+
+        <div class="row">
+            <p>空气质量指数:<span th:text="${reportModel.report.aqi}">Default</span></p>
+        </div>
+
+        <div class="row">
+            <p>当前温度:<span th:text="${reportModel.report.wendu}"></span></p>
+        </div>
+
+        <div class="row">
+            <p>温馨提示:<span th:text="${reportModel.report.ganmao}"></span></p>
+        </div>
+        <div class="row">
+            <div class="card border-info" th:each="forecast : ${reportModel.report.forecast }">
+                <div class="card-body text-info">
+                    <p class="card-text" th:text="${forecast.date}">日期</p>
+                    <p class="card-text" th:text="${forecast.type}">天气</p>
+                    <p class="card-text" th:text="${forecast.high}">最高温度</p>
+                    <p class="card-text" th:text="${forecast.low}">最低温度</p>
+                    <p class="card-text" th:text="${forecast.fengxiang}">风向</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:if="${reportModel.report}==null">
+        <div class="row">
+            <p>
+                Weather data API cannot be get.
+            </p>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+            integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+            crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" th:src="@{/js/weather/report.js}"></script>
+</div>
+</body>
+</html>

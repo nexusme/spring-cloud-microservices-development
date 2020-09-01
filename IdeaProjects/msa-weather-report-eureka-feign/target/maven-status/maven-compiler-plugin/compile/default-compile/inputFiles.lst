@@ -1,0 +1,11 @@
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/service/WeatherReportServiceImpl.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/service/WeatherReportService.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/vo/Yesterday.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/service/CityClient.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/controller/WeatherReportController.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/service/WeatherClient.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/vo/Forecast.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/vo/WeatherResponse.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/vo/Weather.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/vo/City.java
+/Users/nexus/IdeaProjects/msa-weather-report-eureka-feign/src/main/java/com/nexus/spring/cloud/weather/Application.java

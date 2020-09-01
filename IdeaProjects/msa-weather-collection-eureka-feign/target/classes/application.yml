@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: msa-weather-collection-eureka-feign
+server:
+  port: 8892
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+feign:
+   client:
+     config:
+      feignName:
+       connectTimeout: 5000
+       readTimeout: 5000

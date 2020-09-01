@@ -1,0 +1,8 @@
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/vo/WeatherResponse.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/vo/Weather.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/service/WeatherDataService.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/vo/Forecast.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/service/WeatherDataServiceImpl.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/Application.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/vo/Yesterday.java
+/Users/nexus/IdeaProjects/msa-weather-data-eureka/src/main/java/com/nexus/spring/cloud/weather/controller/WeatherController.java

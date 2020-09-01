@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: msa-weather-eureka-client
+server:
+  port: 8899
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

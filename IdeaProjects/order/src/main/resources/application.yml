@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-order
+server:
+  port: 8889
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

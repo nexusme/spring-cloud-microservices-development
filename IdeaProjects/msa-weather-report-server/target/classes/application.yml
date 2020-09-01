@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: example-weather-eureka-report-feign
+  thymeleaf:
+    cache: false
+server:
+  port: 8891
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000

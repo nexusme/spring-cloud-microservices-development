@@ -1,0 +1,11 @@
+com/nexus/spring/cloud/weather/service/CityClient.class
+com/nexus/spring/cloud/weather/controller/WeatherReportController.class
+com/nexus/spring/cloud/weather/vo/Weather.class
+com/nexus/spring/cloud/weather/Application.class
+com/nexus/spring/cloud/weather/service/WeatherReportService.class
+com/nexus/spring/cloud/weather/service/WeatherReportServiceImpl.class
+com/nexus/spring/cloud/weather/service/WeatherClient.class
+com/nexus/spring/cloud/weather/vo/Forecast.class
+com/nexus/spring/cloud/weather/vo/City.class
+com/nexus/spring/cloud/weather/vo/Yesterday.class
+com/nexus/spring/cloud/weather/vo/WeatherResponse.class

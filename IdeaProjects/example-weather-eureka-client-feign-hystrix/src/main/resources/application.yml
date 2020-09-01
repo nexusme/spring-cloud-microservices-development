@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: example-weather-eureka-client-feign-hystrix
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
